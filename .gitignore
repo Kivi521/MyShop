@@ -43,3 +43,9 @@ testem.log
 Thumbs.db
 
 .browserslistrc
+.vs
+bin
+obj
+Properties
+Shop.sqbpro
+Migrations

@@ -1,0 +1,54 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Java Bookcase",
+    "Price": 399,
+    "Size": "L 90cm x D 35cm x H 120cm",
+    "ImgId": "F-001",
+    "Color": "Oak",
+    "DeliveryType": "Large / bulky item",
+    "Description": "Create your dream space with the Java Bookcase. Fancy the coastal and bohemian look in your home but not the price tag? Our trendy Java range features natural rattan silhouette drawer with a textured, sandy oak look finish! This versatile piece will seamlessly fit into any space, allowing you to display your favourite décor pieces and stow away your knick-knacks all at once."
+  },
+  {
+    "Id": 2,
+    "Name": "Java 6 Drawer Dresser",
+    "Price": 699,
+    "Size": "L 140cm x D 40cm x H 75cm",
+    "ImgId": "F-002",
+    "Color": "Oak",
+    "DeliveryType": "Large / bulky item",
+    "Description": "Store your clothing and more in your very own Java 6 Drawer Dresser! Forget the floor-robe or that random chair in the corner, with the Java’s spacious drawers, you’ll keep clutter at bay and make getting ready a breeze."
+  },
+  {
+    "Id": 3,
+    "Name": "Java King Bed",
+    "Price": 799,
+    "Size": "L 189cm x D 220cm x H 100cm",
+    "ImgId": "F-003",
+    "Color": "Oak",
+    "DeliveryType": "Large / bulky item",
+    "Description": "Upgrade your sleep faster than you can read this description with the chic Java King Bed! A bed that makes a statement the Java features natural rattan panels and a textured, sandy oak look finish that’s easy to."
+  },
+  {
+    "Id": 4,
+    "Name": "Marella 2 Seater Sofa",
+    "Price": 649,
+    "Size": "L 170cm x D 93cm x H 86cm",
+    "ImgId": "F-004",
+    "Color": "Standard Edie Grey",
+    "DeliveryType": "Large / bulky item",
+    "Description": "This Aussie-made sofa is the perfect contemporary hero for your living space. Its natural timber look makes it easy to mix and match with other furniture, and it comes with a choice of over one hundred fabrics! Perfect for contemporary or classic interior designs, you’re sure to love the Marella."
+  },
+  {
+    "Id": 5,
+    "Name": "Havana 2 Door Wardrobe",
+    "Price": 399,
+    "Size": "L 92cm x D 55cm x H 180cm",
+    "ImgId": "F-005",
+    "Color": "Light Oak",
+    "DeliveryType": "Large / bulky item",
+    "Description": "Keep your clothes neatly stored away with the practical Havana Robe. Featuring a textured light oak finish for a coastal look, this contemporary robe is a stylish storage solution that’ll keep your bedroom organised."
+  }
+
+
+]
