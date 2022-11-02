@@ -47,7 +47,8 @@ namespace OrderManagementSystemNew.Controllers
         {
             if (ModelState.IsValid)
             {
-                //TODO: 
+                //TODO:
+                
                 var result = await _signInManager.PasswordSignInAsync(model.Username,
                   model.Password,
                   model.RememberMe,
@@ -61,7 +62,7 @@ namespace OrderManagementSystemNew.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("About", "Home");
+                        return RedirectToAction("shop", "Home");
                     }
                 }
             }
@@ -87,7 +88,7 @@ namespace OrderManagementSystemNew.Controllers
 
                 if (user != null)
                 {
-                    var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
+                    var result = await _signInManager.PasswordSignInAsync(user, model.Password,false, false);
 
                     if (result.Succeeded)
                     {

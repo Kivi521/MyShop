@@ -28,7 +28,6 @@
     <None Remove="Data\" />
     <None Remove="Data\Entity\" />
     <None Remove="Data\migration\" />
-    <None Remove="Views\App\" />
     <None Remove="frontend\src\app\views\" />
     <None Remove="frontend\src\app\shared\" />
     <None Remove="frontend\src\app\services\" />
@@ -51,7 +50,6 @@
     <Folder Include="Data\" />
     <Folder Include="Data\Entity\" />
     <Folder Include="Data\migration\" />
-    <Folder Include="Views\App\" />
     <Folder Include="frontend\src\app\views\" />
     <Folder Include="frontend\src\app\shared\" />
     <Folder Include="frontend\src\app\services\" />
@@ -67,5 +65,14 @@
     <None Update="shop.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\frontend\favicon.ico" />
+    <Content Remove="wwwroot\frontend\index.html" />
+    <Content Remove="wwwroot\frontend\runtime.js" />
+    <Content Remove="wwwroot\frontend\styles.css" />
+    <Content Remove="wwwroot\frontend\3rdpartylicenses.txt" />
+    <Content Remove="wwwroot\frontend\polyfills.js" />
+    <Content Remove="wwwroot\frontend\main.js" />
   </ItemGroup>
 </Project>

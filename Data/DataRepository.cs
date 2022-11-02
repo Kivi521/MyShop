@@ -9,7 +9,7 @@ namespace OrderManagementSystemNew.Data
 {
     public class DataRepository: IDataRepository
     {
-        private List<TestData> products = new List<TestData>();
+        
         private readonly ShopContext _ctx;
         
 
@@ -18,21 +18,6 @@ namespace OrderManagementSystemNew.Data
         {
             _ctx = ctx;
 
-
-            TestData productA = new TestData();
-            productA.id = 1;
-            productA.name = "bookcase";
-            productA.price = 999.9M;
-            productA.description = "this is a very good bookcase";
-
-            TestData productB = new TestData();
-            productB.id = 2;
-            productB.name = "sofa";
-            productB.price = 576.9M;
-            productB.description = "this is a very good sofa";
-
-            products.Add(productA);
-            products.Add(productB);
         }
 
        
