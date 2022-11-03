@@ -67,7 +67,7 @@ namespace OrderManagementSystemNew.Controllers
                 }
             }
 
-            ModelState.AddModelError("", "Failed to login");
+            ModelState.AddModelError("", "Sorry, failed to login");
 
             return View();
         }
@@ -110,6 +110,8 @@ namespace OrderManagementSystemNew.Controllers
                           claims,
                           expires: DateTime.UtcNow.AddMinutes(30),
                           signingCredentials: creds);
+
+
 
                         var results = new
                         {
