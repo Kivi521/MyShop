@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using OrderManagementSystemNew.Data.Entities;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data.Entities;
+using MyShop.Data.Entity;
 
-namespace OrderManagementSystemNew.Data
+namespace MyShop.Data
 {
     public class DataRepository: IDataRepository
     {

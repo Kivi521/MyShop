@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data.Entity;
 using Microsoft.AspNetCore.Mvc;
-using OrderManagementSystemNew.Data.Entities;
+using MyShop.Data.Entities;
 
-namespace OrderManagementSystemNew.Data
+namespace MyShop.Data
 {
     public interface IDataRepository
     {

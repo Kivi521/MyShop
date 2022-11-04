@@ -3,16 +3,16 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using OrderManagementSystemNew.Models;
+using MyShop.Models;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 
-namespace OrderManagementSystemNew.Controllers
+namespace MyShop.Controllers
 {
     public class AccountController : Controller
     {

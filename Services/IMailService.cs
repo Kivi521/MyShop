@@ -1,4 +1,4 @@
-﻿namespace OrderManagementSystemNew.Services
+﻿namespace MyShop.Services
 {
     public interface IMailService
     {

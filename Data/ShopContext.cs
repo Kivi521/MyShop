@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using OrderManagementSystemNew.Data.Entities;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data.Entities;
+using MyShop.Data.Entity;
 
-namespace OrderManagementSystemNew.Data
+namespace MyShop.Data
 {
     public class ShopContext : IdentityDbContext<StoreUser>
     {
@@ -27,7 +27,7 @@ namespace OrderManagementSystemNew.Data
         {
             base.OnConfiguring(bldr);
 
-            bldr.UseSqlite("Data Source=shop.db");
+            bldr.UseSqlServer("Server=PETER-PC; Database=myShopDataBase; User Id=hello;Password=123456;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

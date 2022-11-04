@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OrderManagementSystemNew.ViewModels
+namespace MyShop.ViewModels
 {
     public class OrderItemViewModel
     {

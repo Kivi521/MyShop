@@ -1,8 +1,8 @@
 ﻿using System;
-using OrderManagementSystemNew.Data.Entities;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data.Entities;
+using MyShop.Data.Entity;
 
-namespace OrderManagementSystemNew.Data.Entity
+namespace MyShop.Data.Entity
 {
     public class OrderItem
     {

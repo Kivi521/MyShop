@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data.Entity;
 
-namespace OrderManagementSystemNew.Data.Entities
+namespace MyShop.Data.Entities
 {
     public class Order
     {

@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OrderManagementSystemNew.Data;
-using OrderManagementSystemNew.Data.Entities;
-using OrderManagementSystemNew.Models;
+using MyShop.Data;
+using MyShop.Data.Entities;
+using MyShop.Models;
 //using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using OrderManagementSystemNew.Data.Entity;
-using OrderManagementSystemNew.ViewModels;
+using MyShop.Data.Entity;
+using MyShop.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace OrderManagementSystemNew.Controllers
+namespace MyShop.Controllers
 {
     [Route("api/[Controller]")]
     

@@ -7,9 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using OrderManagementSystemNew.Data;
+using MyShop.Data;
 
-namespace OrderManagementSystemNew
+namespace MyShop
 {
     public class Program
     {

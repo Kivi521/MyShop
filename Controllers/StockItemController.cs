@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using OrderManagementSystemNew.Data.Entity;
-using OrderManagementSystemNew.Data;
+using MyShop.Data.Entity;
+using MyShop.Data;
 
-namespace OrderManagementSystemNew.Controllers
+namespace MyShop.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]

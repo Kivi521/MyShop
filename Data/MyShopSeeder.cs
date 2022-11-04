@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data.Entity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using OrderManagementSystemNew.Data;
+using MyShop.Data;
 
-namespace OrderManagementSystemNew.Data
+namespace MyShop.Data
 {
     public class MyShopSeeder
     {

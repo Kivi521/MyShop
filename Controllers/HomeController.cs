@@ -5,13 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using OrderManagementSystemNew.Models;
-using OrderManagementSystemNew.Services;
+using MyShop.Models;
+using MyShop.Services;
 using Microsoft.AspNetCore.Authorization;
-using OrderManagementSystemNew.Data;
-using OrderManagementSystemNew.Data.Entity;
+using MyShop.Data;
+using MyShop.Data.Entity;
 
-namespace OrderManagementSystemNew.Controllers
+namespace MyShop.Controllers
 {
     public class HomeController : Controller
     {

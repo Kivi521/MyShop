@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Logging;
 
-namespace OrderManagementSystemNew.Services
+namespace MyShop.Services
 {
     public class NullMailService: IMailService
     {

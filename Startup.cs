@@ -9,11 +9,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using OrderManagementSystemNew.Data;
-using OrderManagementSystemNew.Data.Entity;
-using OrderManagementSystemNew.Services;
+using MyShop.Data;
+using MyShop.Data.Entity;
+using MyShop.Services;
 
-namespace OrderManagementSystemNew
+namespace MyShop
 {
     public class Startup
     {

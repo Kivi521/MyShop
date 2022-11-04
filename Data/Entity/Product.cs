@@ -1,5 +1,5 @@
 ﻿using System;
-namespace OrderManagementSystemNew.Data.Entity
+namespace MyShop.Data.Entity
 {
     public class Product
     {

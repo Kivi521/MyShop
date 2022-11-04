@@ -1,10 +1,10 @@
 ﻿using System;
 using AutoMapper;
-using OrderManagementSystemNew.Data.Entities;
-using OrderManagementSystemNew.Data.Entity;
-using OrderManagementSystemNew.ViewModels;
+using MyShop.Data.Entities;
+using MyShop.Data.Entity;
+using MyShop.ViewModels;
 
-namespace OrderManagementSystemNew.Data
+namespace MyShop.Data
 {
     public class MyShopMappingProfile: Profile
     {

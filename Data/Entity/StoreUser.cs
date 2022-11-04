@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity;
 
-namespace OrderManagementSystemNew.Data.Entity
+namespace MyShop.Data.Entity
 {
     public class StoreUser : IdentityUser
     {
