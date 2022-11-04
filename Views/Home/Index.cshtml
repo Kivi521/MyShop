@@ -2,15 +2,34 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container-fluid">
+@*<div class="container-fluid">
         <div><img src="~/slideImg/1.jpg" style="width:100%;" /></div>
         <div><img src="~/slideImg/2.jpg" style="width:100%;" /></div>
         <div><img src="~/slideImg/3.jpg" style="width:100%;" /></div>
     </div>
+*@
 
-
-
-
+<div class="container-fluid">
+<div class='slider'>
+    <div class='slider-items-container'>
+        <div class='slider-item'>
+            <img src="~/slideImg/1.jpg" />
+        </div>
+        <div class='slider-item'>
+            <img src="~/slideImg/2.jpg"/>
+        </div>
+        <div class='slider-item'>
+            <img src="~/slideImg/3.jpg"/>
+        </div>
+    </div>
+    <div class='controls'>
+        <a href="#" class='prev-btn'><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        <a href="#" class='next-btn'><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+    <div class='dots'>
+    </div>
+</div>
+</div>
 
 
 

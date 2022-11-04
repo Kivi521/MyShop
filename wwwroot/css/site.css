@@ -1,71 +1,63 @@
-﻿/*header{
-    background-color: pink;
-}*/
-/*body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+﻿
+.slider {
+    width: 100%;
+    max-width:1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-input[type=submit] {
-    width: auto;
-}
-
-input, textarea {
-    font-size: 18px;
-    width: 200px;
-}
-
-
-label {
-    font-size: 16px;
-}
-
-#theForm {
-    background-color: #d0d0d0;
-}
-
-    #theForm input[type=submit] {
-        background-color: green;
-        color: white;
+    .slider .slider-items-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        transition: transform 0.35s ease-in-out;
     }
 
-ul.products-props {
-    font-size: small;
-}
+        .slider .slider-items-container img {
+            width: 100vw;
+            max-width: 1920px;
+            display: block;
+        }
 
-    ul.products-props li {
-        list-style-type: none;
+    .slider .controls {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 35px;
     }
 
-.product-info {
-    border: 1px solid gray;
-    display: inline-block;
-    padding: 8px 2px;
-    margin: 2px;
-    width: 450px;
-    background-color: lightgray;
-    border-radius: 5px;
-}
+        .slider .controls a {
+            color: #333;
+            text-decoration: none;
+            transition: 0.15s ease-in-out;
+        }
 
-    .product-info img {
-        margin: 3px;
-        float: left;
-        border: 1px solid black;
-        max-width: 150px;
+            .slider .controls a:hover {
+                color: #888;
+            }
+
+    .slider .dots {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
     }
 
-#login-block {
-    float: right;
-}
+        .slider .dots .dot {
+            width: 10px;
+            height: 10px;
+            background: #333;
+            transition: 0.15s ease-in-out;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 0 20px;
+        }
 
-    #login-block .toggle-item {
-        text-align: right;
-    }
-
-    #login-block .popup-form {
-        display: none;
-        background-color: grey;
-        border: solid 1px black;
-        padding: 2px;
-        font-size: 10px;
-    }
-*/
+            .slider .dots .dot.active {
+                background: #888;
+            }
