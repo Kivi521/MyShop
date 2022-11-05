@@ -27,7 +27,8 @@ namespace MyShop.Data
         {
             base.OnConfiguring(bldr);
 
-            bldr.UseSqlServer("Server=PETER-PC; Database=myShopDataBase; User Id=hello;Password=123456;");
+            //bldr.UseSqlServer("Server=PETER-PC; Database=myShopDataBase; User Id=hello;Password=123456;");
+            bldr.UseSqlite("Data Source =shop.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

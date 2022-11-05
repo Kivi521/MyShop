@@ -9,6 +9,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'MyShop' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'OrderManagementSystemNew' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
@@ -36,7 +37,6 @@
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
-    <None Remove="Migrations\" />
     <None Remove="ViewModel\" />
     <None Remove="Services\" />
     <None Remove="Views\Account\" />
@@ -54,7 +54,6 @@
     <Folder Include="frontend\src\app\views\" />
     <Folder Include="frontend\src\app\shared\" />
     <Folder Include="frontend\src\app\services\" />
-    <Folder Include="Migrations\" />
     <Folder Include="Services\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
