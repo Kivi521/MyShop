@@ -58,7 +58,7 @@
     <Folder Include="Views\Account\" />
     <Folder Include="wwwroot\img\" />
     <Folder Include="wwwroot\img\products\" />
-    <Folder Include="wwwroot\img\slideImg\" />
+    <Folder Include="wwwroot\img\carousel\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="FrontEnd\src\app\Product.html">
@@ -70,13 +70,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Remove="wwwroot\frontend\favicon.ico" />
-    <Content Remove="wwwroot\frontend\index.html" />
-    <Content Remove="wwwroot\frontend\runtime.js" />
-    <Content Remove="wwwroot\frontend\styles.css" />
-    <Content Remove="wwwroot\frontend\3rdpartylicenses.txt" />
-    <Content Remove="wwwroot\frontend\polyfills.js" />
-    <Content Remove="wwwroot\frontend\main.js" />
     <Content Remove="wwwroot\ima\" />
     <Content Remove="wwwroot\img\imageOfMyShope\" />
     <Content Remove="wwwroot\img\slideImg\" />
