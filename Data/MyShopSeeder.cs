@@ -31,19 +31,19 @@ namespace MyShop.Data
         {
             _ctx.Database.EnsureCreated();
 
-            StoreUser user = await _userManager.FindByEmailAsync("somi@gmail.com");
+            StoreUser user = await _userManager.FindByEmailAsync("visitor@myshop.com");
 
             if (user == null)
             {
                 user = new StoreUser()
                 {
-                    FirstName = "Somi",
-                    LastName = "Li",
-                    Email = "somi@gmail.com",
-                    UserName = "somiLi"
+                    FirstName = "visitor",
+                    LastName = "visitor",
+                    Email = "visitor@myshop.com",
+                    UserName = "visitor"
                 };
 
-                var result = await _userManager.CreateAsync(user, "P@ssw0rd!");
+                var result = await _userManager.CreateAsync(user, "Hel!oW0rld");
                 if (result != IdentityResult.Success)
                 {
                     throw new InvalidOperationException("Could not create new user in Seeder");
