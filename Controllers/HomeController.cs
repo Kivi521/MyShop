@@ -5,24 +5,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MyShop.Models;
-using MyShop.Services;
+using EShop.Models;
+using EShop.Services;
 using Microsoft.AspNetCore.Authorization;
-using MyShop.Data;
-using MyShop.Data.Entity;
+using EShop.Data;
+using EShop.Data.Entity;
 
-namespace MyShop.Controllers
+namespace EShop.Controllers
 {
     public class HomeController : Controller
     {
         
 
         private readonly IMailService _mailService;
-        private readonly ILogger<StockItemController> _logger;
+        private readonly ILogger<EBookController> _logger;
         private readonly DataRepository _dataRepository;
 
 
-        public HomeController(IMailService mailService, ILogger<StockItemController> logger, DataRepository dataRepository)
+        public HomeController(IMailService mailService, ILogger<EBookController> logger, DataRepository dataRepository)
         {
             _mailService = mailService;
             ViewBag.UserMessage = "Mail Sent...";
@@ -77,7 +77,7 @@ namespace MyShop.Controllers
         //[Authorize]
         public IActionResult Shop()
         {
-            //var results = _dataRepository.GetAllProducts();
+            //var results = _dataRepository.GetAllEBooks();
 
             //return View(results);
             return View();

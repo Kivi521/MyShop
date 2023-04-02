@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using MyShop.Data.Entities;
-using MyShop.Data.Entity;
+using EShop.Data.Entities;
+using EShop.Data.Entity;
 
-namespace MyShop.Data
+namespace EShop.Data
 {
     public class DataRepository: IDataRepository
     {
         
-        private readonly ShopContext _ctx;
+        private readonly EShopContext _ctx;
         
 
         
-        public DataRepository(ShopContext ctx)
+        public DataRepository(EShopContext ctx)
         {
             _ctx = ctx;
 
@@ -22,13 +22,13 @@ namespace MyShop.Data
 
        
 
-        public IEnumerable<Product> GetAllProducts()
+        public IEnumerable<EBook> GetAllEBooks()
         {
-            return _ctx.Products
+            return _ctx.EBooks
                   .OrderBy(p => p.Name)
                   .ToList();
 
-            //return products;
+            //return EBooks;
         }
 
         public IEnumerable<Order> GetAllOrders(bool includeItems)
@@ -37,7 +37,7 @@ namespace MyShop.Data
             {
                 return _ctx.Orders
                   .Include(o => o.Items)
-                  .ThenInclude(i => i.Product)
+                  .ThenInclude(i => i.EBook)
                   .ToList();
             }
             else
@@ -49,11 +49,11 @@ namespace MyShop.Data
 
         
 
-        public IEnumerable<Product> GetProductsByName(string name)
+        public IEnumerable<EBook> GetEBooksByName(string name)
         {
-            return _ctx.Products
+            return _ctx.EBooks
                 .Where(p => p.Name == name)
-                .ToList();
+                .ToList(); 
         }
 
         public IEnumerable<Order> GetOrdersByUser(string username, bool includeItems)
@@ -62,7 +62,7 @@ namespace MyShop.Data
             {
                 return _ctx.Orders
                   .Include(o => o.Items)
-                  .ThenInclude(i => i.Product)
+                  .ThenInclude(i => i.EBook)
                   .Where(o => o.User.UserName == username)
                   .ToList();
             }
@@ -78,9 +78,9 @@ namespace MyShop.Data
         {
             return _ctx.Orders
              .Include(o => o.Items)
-             .ThenInclude(i => i.Product)
+             .ThenInclude(i => i.EBook)
              .Where(o => o.Id == id && o.User.UserName == username)
-             .FirstOrDefault();
+             .FirstOrDefault();//this is going to do the query, find the one that's for the id and return the first result or a null.
         }
 
         public void AddEntity(object entity)

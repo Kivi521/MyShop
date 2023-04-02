@@ -5,20 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using MyShop.Data.Entity;
+using EShop.Data.Entity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using MyShop.Data;
+using EShop.Data;
 
-namespace MyShop.Data
+namespace EShop.Data
 {
-    public class MyShopSeeder
+    public class EShopSeeder
     {
-        private readonly ShopContext _ctx;
+        private readonly EShopContext _ctx;
         private readonly IWebHostEnvironment _hosting;
         private readonly UserManager<StoreUser> _userManager;
 
-        public MyShopSeeder(ShopContext ctx,
+        public EShopSeeder(EShopContext ctx,
           IWebHostEnvironment hosting,
           UserManager<StoreUser> userManager)
         {
@@ -31,7 +31,7 @@ namespace MyShop.Data
         {
             _ctx.Database.EnsureCreated();
 
-            StoreUser user = await _userManager.FindByEmailAsync("visitor@myshop.com");
+            StoreUser user = await _userManager.FindByEmailAsync("visitor@EShop.com");
 
             if (user == null)
             {
@@ -39,7 +39,7 @@ namespace MyShop.Data
                 {
                     FirstName = "visitor",
                     LastName = "visitor",
-                    Email = "visitor@myshop.com",
+                    Email = "visitor@EShop.com",
                     UserName = "visitor"
                 };
 
@@ -50,13 +50,15 @@ namespace MyShop.Data
                 }
             }
 
-            if (!_ctx.Products.Any())
+            if (!_ctx.EBooks.Any())
             {
                 // Need to create the Sample Data
                 var file = Path.Combine(_hosting.ContentRootPath, "Data/data.json");
                 var json = File.ReadAllText(file);
-                var products = JsonSerializer.Deserialize<IEnumerable<Product>>(json);
-                _ctx.Products.AddRange(products);
+                var EBooks = JsonSerializer.Deserialize<IEnumerable<EBook>>(json); 
+                //add EBooks to the contex
+
+                _ctx.EBooks.AddRange(EBooks);
 
                 var order = _ctx.Orders.Where(o => o.Id == 1).FirstOrDefault();
                 if (order != null)
@@ -66,13 +68,13 @@ namespace MyShop.Data
               {
                 new OrderItem()
                 {
-                  Product = products.First(), 
+                  EBook = EBooks.First(), 
                       Quantity = 5,
-                  UnitPrice = products.First().Price
+                  UnitPrice = EBooks.First().Price
                 }
               };
                 }
-
+                //this doesn't get saved untile this sytax
                 _ctx.SaveChanges();
             }
         }

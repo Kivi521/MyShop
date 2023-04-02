@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyShop.Models
+namespace EShop.Models
 {
     public class ContactViewModel
     {

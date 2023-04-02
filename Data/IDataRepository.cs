@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
-using MyShop.Data.Entity;
+using EShop.Data.Entity;
 using Microsoft.AspNetCore.Mvc;
-using MyShop.Data.Entities;
+using EShop.Data.Entities;
 
-namespace MyShop.Data
+namespace EShop.Data
 {
     public interface IDataRepository
     {
-        IEnumerable<Product> GetAllProducts();
-        IEnumerable<Product> GetProductsByName(string name);
+        IEnumerable<EBook> GetAllEBooks();
+        IEnumerable<EBook> GetEBooksByName(string name);
 
         IEnumerable<Order> GetAllOrders(bool includeItems);
         IEnumerable<Order> GetOrdersByUser(string username, bool includeItems);

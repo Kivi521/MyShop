@@ -4,22 +4,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using MyShop.Data.Entities;
-using MyShop.Data.Entity;
+using EShop.Data.Entities;
+using EShop.Data.Entity;
 
-namespace MyShop.Data
+namespace EShop.Data
 {
-    public class ShopContext : IdentityDbContext<StoreUser>
+    public class EShopContext : IdentityDbContext<StoreUser>
     {
         private readonly IConfiguration _config;
 
-        public ShopContext(IConfiguration config)
+        public EShopContext(IConfiguration config)
         {
             _config = config;
         }
 
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<EBook> EBooks { get; set; }
         public DbSet<Order> Orders { get; set; }
        
 
@@ -27,15 +27,15 @@ namespace MyShop.Data
         {
             base.OnConfiguring(bldr);
 
-            //bldr.UseSqlServer("Server=PETER-PC; Database=myShopDataBase; User Id=hello;Password=123456;");
-            bldr.UseSqlite("Data Source =shop.db");
+            //bldr.UseSqlServer("Server=PETER-PC; Database=EShopDataBase; User Id=hello;Password=123456;");
+            bldr.UseSqlite("Data Source =EShop.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Product>()
+            modelBuilder.Entity<EBook>()
               .Property(p => p.Price)
               .HasColumnType("money");
         }

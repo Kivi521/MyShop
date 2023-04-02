@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyShop.Data;
-using MyShop.Data.Entities;
-using MyShop.Models;
+using EShop.Data;
+using EShop.Data.Entities;
+using EShop.Models;
 //using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MyShop.Data.Entity;
-using MyShop.ViewModels;
+using EShop.Data.Entity;
+using EShop.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace MyShop.Controllers
+namespace EShop.Controllers
 {
     [Route("api/[Controller]")]
     

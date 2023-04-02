@@ -9,11 +9,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using MyShop.Data;
-using MyShop.Data.Entity;
-using MyShop.Services;
+using EShop.Data;
+using EShop.Data.Entity;
+using EShop.Services;
 
-namespace MyShop
+namespace EShop
 {
     public class Startup
     {
@@ -35,7 +35,7 @@ namespace MyShop
             {
                 cfg.User.RequireUniqueEmail = true;
             })
-            .AddEntityFrameworkStores<ShopContext>();
+            .AddEntityFrameworkStores<EShopContext>();
 
             services.AddAuthentication()
                 .AddCookie()
@@ -66,13 +66,13 @@ namespace MyShop
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
-            services.AddTransient<MyShopSeeder>();
+            services.AddTransient<EShopSeeder>();
 
             services.AddControllersWithViews()
                 .AddRazorRuntimeCompilation()
                 .AddNewtonsoftJson(cfg => cfg.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
 
-            services.AddDbContext<ShopContext>();
+            services.AddDbContext<EShopContext>();
             services.AddScoped<DataRepository>();
             services.AddRazorPages();
         }
@@ -88,7 +88,7 @@ namespace MyShop
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                // The default HSTS value is 30 days. You may want to change this for EBookion scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyShop.ViewModels
+namespace EShop.ViewModels
 {
     public class OrderItemViewModel
     {
@@ -11,13 +11,13 @@ namespace MyShop.ViewModels
         public decimal UnitPrice { get; set; }
 
         [Required]
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public string ProductPrice { get; set; }
-        public string ProductSize { get; set; }
-        public string ProductImgId { get; set; }
-        public string ProductColor { get; set; }
-        //public string ProductDeliveryType { get; set; }
-        //public string ProductDescription { get; set; }
+        public int EBookId { get; set; }
+        public string EBookName { get; set; }
+        public string EBookPrice { get; set; }
+        public string EBookSize { get; set; }
+        public string EBookImgId { get; set; }
+        public string EBookColor { get; set; }
+        //public string EBookDeliveryType { get; set; }
+        //public string EBookDescription { get; set; }
     }
 }

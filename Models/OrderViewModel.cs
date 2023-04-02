@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyShop.Data.Entity;
+using EShop.Data.Entity;
 
-namespace MyShop.ViewModels
+namespace EShop.ViewModels
 {
     public class OrderViewModel
     {

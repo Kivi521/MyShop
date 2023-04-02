@@ -1,54 +1,33 @@
 ﻿[
   {
     "Id": 1,
-    "Name": "Java Bookcase",
-    "Price": 399,
-    "Size": "L 90cm x D 35cm x H 120cm",
+    "Name": "The Wife",
+    "Price": 4.81,
+    "Publisher": "Boldwood Books",
     "ImgId": "F-001",
-    "Color": "Oak",
-    "DeliveryType": "Large / bulky item",
-    "Description": "Create your dream space with the Java Bookcase. Fancy the coastal and bohemian look in your home but not the price tag? Our trendy Java range features natural rattan silhouette drawer with a textured, sandy oak look finish! This versatile piece will seamlessly fit into any space, allowing you to display your favourite décor pieces and stow away your knick-knacks all at once."
+    "Author": "John Nicholl",
+    "DateOfPublish": "August 2022",
+    "Introduction": "Twenty-nine-year-old Cynthia Galbraith is serving a life sentence for murder, and struggling with the traumatic past that put her behind bars.When the prison counsellor suggests Cynthia write a personal journal exploring the events that drove her to murder, she figures she has all the time in the world and very little, if anything, to lose. So she begins to write, revealing the secrets that haunt her and the truths she’s never dared tell."
   },
   {
     "Id": 2,
-    "Name": "Java 6 Drawer Dresser",
-    "Price": 699,
-    "Size": "L 140cm x D 40cm x H 75cm",
+    "Name": "Cutting Edge",
+    "Price": 14.05,
+    "Publisher": "Tor Publishing Group",
     "ImgId": "F-002",
-    "Color": "Oak",
-    "DeliveryType": "Large / bulky item",
-    "Description": "Store your clothing and more in your very own Java 6 Drawer Dresser! Forget the floor-robe or that random chair in the corner, with the Java’s spacious drawers, you’ll keep clutter at bay and make getting ready a breeze."
+    "Author": "Ward Larsen",
+    "DateOfPublish": " January 2018",
+    "Introduction": "Trey DeBolt is a young man at the crest of life. His role as a Coast Guard rescue swimmer in Alaska offers him a rewarding job and limitless adventure. Then a tragic accident alters his life: during a harrowing rescue, his helicopter goes down.Severely injured, DeBolt awakens in a seaside cabin in Maine, thousands of miles from where the accident occurred. His lone nurse lets slip that he has been officially declared dead, lost in the crash. Back in Alaska, however, Coast Guard investigator Shannon Lund uncovers evidence that DeBolt might still be alive. Her search quickly becomes personal, but before she can intervene, chaos erupts outside a cabin in the wilds of Maine.The nurse who has been treating DeBolt is brutally killed by military-trained assassins. DeBolt is only saved when a bizarre vision guides him to safety. Soon other images appear, impossible revelations that are unfailing in their accuracy. As he runs for his life, DeBolt discovers he has been drawn into an ultra-secret government project. The power it bestows is boundless, both a gift and a curse. Yet one thing is certain: Trey DeBolt has abilities no human has ever known."
   },
   {
     "Id": 3,
-    "Name": "Java King Bed",
-    "Price": 799,
-    "Size": "L 189cm x D 220cm x H 100cm",
+    "Name": "23rd Midnight",
+    "Price": 12.2,
+    "Publisher": "Cornerstone",
     "ImgId": "F-003",
-    "Color": "Oak",
-    "DeliveryType": "Large / bulky item",
-    "Description": "Upgrade your sleep faster than you can read this description with the chic Java King Bed! A bed that makes a statement the Java features natural rattan panels and a textured, sandy oak look finish that’s easy to."
-  },
-  {
-    "Id": 4,
-    "Name": "Marella 2 Seater Sofa",
-    "Price": 649,
-    "Size": "L 170cm x D 93cm x H 86cm",
-    "ImgId": "F-004",
-    "Color": "Standard Edie Grey",
-    "DeliveryType": "Large / bulky item",
-    "Description": "This Aussie-made sofa is the perfect contemporary hero for your living space. Its natural timber look makes it easy to mix and match with other furniture, and it comes with a choice of over one hundred fabrics! Perfect for contemporary or classic interior designs, you’re sure to love the Marella."
-  },
-  {
-    "Id": 5,
-    "Name": "Havana 2 Door Wardrobe",
-    "Price": 399,
-    "Size": "L 92cm x D 55cm x H 180cm",
-    "ImgId": "F-005",
-    "Color": "Light Oak",
-    "DeliveryType": "Large / bulky item",
-    "Description": "Keep your clothes neatly stored away with the practical Havana Robe. Featuring a textured light oak finish for a coastal look, this contemporary robe is a stylish storage solution that’ll keep your bedroom organised."
+    "Author": "James Patterson",
+    "DateOfPublish": "March 2023",
+    "Introduction": "Detective Lindsay Boxer put serial killer Evan Burke in jail.Reporter Cindy Thomas put Burke on the bestseller list, in her true-crime book about the case.An obsessed fan is studying every detail-and committing fresh horrors that carry Burke's signature.Now Lindsay's tracking an elusive suspect, one who's penning a deadly playbook featuring Cindy's name in blood-red ink."
   }
-
 
 ]

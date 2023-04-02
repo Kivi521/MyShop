@@ -1,14 +1,14 @@
 ﻿using System;
 using AutoMapper;
-using MyShop.Data.Entities;
-using MyShop.Data.Entity;
-using MyShop.ViewModels;
+using EShop.Data.Entities;
+using EShop.Data.Entity;
+using EShop.ViewModels;
 
-namespace MyShop.Data
+namespace EShop.Data
 {
-    public class MyShopMappingProfile: Profile
+    public class EShopMappingProfile: Profile
     {
-        public MyShopMappingProfile()
+        public EShopMappingProfile()
         {
             //CreateMap<Order, OrderViewModel>()
             //  .ForMember(o => o.OrderId, ex => ex.MapFrom(i => i.Id))

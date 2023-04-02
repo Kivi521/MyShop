@@ -1,14 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MyShop' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'OrderManagementSystemNew' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
@@ -44,8 +43,6 @@
     <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
-    <None Remove="shop.db-wal" />
-    <None Remove="shop.db-shm" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -57,21 +54,18 @@
     <Folder Include="Services\" />
     <Folder Include="Views\Account\" />
     <Folder Include="wwwroot\img\" />
-    <Folder Include="wwwroot\img\products\" />
+    <Folder Include="wwwroot\img\EBooks\" />
     <Folder Include="wwwroot\img\carousel\" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="FrontEnd\src\app\Product.html">
+    <None Update="FrontEnd\src\app\EBook.html">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </None>
-    <None Update="shop.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\ima\" />
-    <Content Remove="wwwroot\img\imageOfMyShope\" />
+    <Content Remove="wwwroot\img\imageOfEShope\" />
     <Content Remove="wwwroot\img\slideImg\" />
   </ItemGroup>
 </Project>

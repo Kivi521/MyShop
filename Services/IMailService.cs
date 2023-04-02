@@ -1,4 +1,4 @@
-﻿namespace MyShop.Services
+﻿namespace EShop.Services
 {
     public interface IMailService
     {

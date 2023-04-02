@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MyShop.Data.Entity;
-using MyShop.Data;
+using EShop.Data.Entity;
+using EShop.Data;
 
-namespace MyShop.Controllers
+namespace EShop.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
     [Produces("application/Json")]
-    public class StockItemController : ControllerBase
+    public class EBookController : ControllerBase
     {
-        private readonly ILogger<StockItemController> _logger;
+        private readonly ILogger<EBookController> _logger;
         private readonly DataRepository _dataRepository;
-        public StockItemController(ILogger<StockItemController> logger, DataRepository dataRepository)
+        public EBookController(ILogger<EBookController> logger, DataRepository dataRepository)
         {
             _logger = logger;
             _dataRepository = dataRepository;
@@ -23,13 +23,13 @@ namespace MyShop.Controllers
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
-        public ActionResult<IEnumerable<Product>> Get()
+        public ActionResult<IEnumerable<EBook>> Get()
         {
             try
             {
-                _logger.LogError($"Geting products!");
-                IEnumerable<Product> products = _dataRepository.GetAllProducts();
-                return Ok(products);
+                _logger.LogError($"Geting EBooks!");
+                IEnumerable<EBook> EBooks = _dataRepository.GetAllEBooks();
+                return Ok(EBooks);
             }
             catch(Exception ex)
             {

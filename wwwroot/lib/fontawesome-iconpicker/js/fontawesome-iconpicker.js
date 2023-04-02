@@ -4020,7 +4020,7 @@
             title: "fas fa-procedures",
             searchTerms: []
         }, {
-            title: "fab fa-product-hunt",
+            title: "fab fa-EBook-hunt",
             searchTerms: []
         }, {
             title: "fas fa-project-diagram",
